@@ -2,6 +2,7 @@ package test;
 
 import org.testng.Assert;
 
+
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.*;
@@ -14,7 +15,7 @@ public class testExamples {
 	public void testOne() {
 
 		Response response = get("https://reqres.in/api/users?page=2");
-		//
+
 		System.out.println("getStatusCode :" + response.getStatusCode());
 		System.out.println("getTime :" + response.getTime());
 		System.out.println("getBody :" + response.getBody().asString());
