@@ -1,6 +1,6 @@
 # RESTAssured_Automation
 
-***Refer Below Videos***
+***Refer this Videos***
 https://www.youtube.com/watch?v=oVNbaBlrhbo&list=PLhW3qG5bs-L8xPrBwDv66cTMlFNeUPdJx&index=1
 
 Pre Requisites
