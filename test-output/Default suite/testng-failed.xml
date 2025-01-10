@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.testOnLocalAPI">
+      <class name="test.SOAP_XML_Request">
         <methods>
-          <include name="delete"/>
+          <include name="validateSoapXML"/>
         </methods>
-      </class> <!-- test.testOnLocalAPI -->
+      </class> <!-- test.SOAP_XML_Request -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
