@@ -16,7 +16,7 @@ public class testOnLocalAPI {
 
 		baseURI = "http://localhost:3000/";
 
-		given().get("/users").then().statusCode(200).log().all();
+		given().get("/posts").then().statusCode(200).log().all();
 
 	}
 
