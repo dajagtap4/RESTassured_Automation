@@ -7,6 +7,21 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>RESTassuredAutomation</name>
 
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version> <!-- Ensure you're using a supported version -->
+            <configuration>
+                <source>1.8</source>  <!-- Set source to Java 8 or later -->
+                <target>1.8</target>  <!-- Set target to Java 8 or later -->
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+
+
 	<dependencies>
 
 		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
