@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-10T22:47:50 IST" name="Default suite" finished-at="2025-01-10T22:47:52 IST" duration-ms="2250">
+  <suite started-at="2025-01-13T12:08:54 IST" name="Default suite" finished-at="2025-01-13T12:08:56 IST" duration-ms="2134">
     <groups>
     </groups>
-    <test started-at="2025-01-10T22:47:50 IST" name="Default test" finished-at="2025-01-10T22:47:52 IST" duration-ms="2250">
-      <class name="test.testOnLocalAPI">
-        <test-method signature="get()[pri:0, instance:test.testOnLocalAPI@77fbd92c]" started-at="2025-01-10T22:47:50 IST" name="get" finished-at="2025-01-10T22:47:52 IST" duration-ms="2153" status="PASS">
+    <test started-at="2025-01-13T12:08:54 IST" name="Default test" finished-at="2025-01-13T12:08:56 IST" duration-ms="2134">
+      <class name="test.SOAP_XML_Request">
+        <test-method signature="validateSoapXML()[pri:0, instance:test.SOAP_XML_Request@c8c12ac]" started-at="2025-01-13T12:08:54 IST" name="validateSoapXML" finished-at="2025-01-13T12:08:56 IST" duration-ms="2102" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- get -->
-      </class> <!-- test.testOnLocalAPI -->
+        </test-method> <!-- validateSoapXML -->
+      </class> <!-- test.SOAP_XML_Request -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

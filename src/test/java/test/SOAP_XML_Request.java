@@ -3,6 +3,7 @@
 package test;
 
 import static io.restassured.RestAssured.baseURI;
+import static org.hamcrest.Matchers.equalTo;
 import static io.restassured.RestAssured.given;
 import java.io.File;
 import java.io.FileInputStream;
@@ -15,6 +16,10 @@ public class SOAP_XML_Request {
 	@Test
 	public void validateSoapXML() throws IOException {
 
+		// Refer these videos for this code
+		// https://youtu.be/_SUD5A2LiJs?si=-Xh8FTEHISL2nFR8
+		// https://youtu.be/YNdTWmhIyaE?si=nq74IQ7yVxfBV-k6
+		
 		File file = new File("./SoapRequest/add.xml");
 
 		if (file.exists()) {
@@ -26,6 +31,7 @@ public class SOAP_XML_Request {
 		baseURI = "http://www.dneonline.com";
 
 		given().contentType("text/xml").accept(ContentType.XML).body(requestBody).when().post("/calculator.asmx").then()
-				.statusCode(200).log().all();
+				.statusCode(200).log().all().
+			body("//*:AddResult.text()",equalTo("0"));
 	}
 }
