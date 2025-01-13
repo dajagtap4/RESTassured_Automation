@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.testOnLocalAPI">
+      <class name="test.XMLSchemaValidation">
         <methods>
-          <include name="get"/>
+          <include name="xmlValidation"/>
         </methods>
-      </class> <!-- test.testOnLocalAPI -->
+      </class> <!-- test.XMLSchemaValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

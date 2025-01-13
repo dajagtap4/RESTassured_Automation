@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-13T12:08:54 IST" name="Default suite" finished-at="2025-01-13T12:08:56 IST" duration-ms="2134">
+  <suite started-at="2025-01-13T15:58:42 IST" name="Default suite" finished-at="2025-01-13T15:58:45 IST" duration-ms="2480">
     <groups>
     </groups>
-    <test started-at="2025-01-13T12:08:54 IST" name="Default test" finished-at="2025-01-13T12:08:56 IST" duration-ms="2134">
-      <class name="test.SOAP_XML_Request">
-        <test-method signature="validateSoapXML()[pri:0, instance:test.SOAP_XML_Request@c8c12ac]" started-at="2025-01-13T12:08:54 IST" name="validateSoapXML" finished-at="2025-01-13T12:08:56 IST" duration-ms="2102" status="PASS">
+    <test started-at="2025-01-13T15:58:42 IST" name="Default test" finished-at="2025-01-13T15:58:45 IST" duration-ms="2480">
+      <class name="test.PutPatchDeleteExamples">
+        <test-method signature="DeleteTest()[pri:0, instance:test.PutPatchDeleteExamples@c8c12ac]" started-at="2025-01-13T15:58:42 IST" name="DeleteTest" finished-at="2025-01-13T15:58:44 IST" duration-ms="1693" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateSoapXML -->
-      </class> <!-- test.SOAP_XML_Request -->
+        </test-method> <!-- DeleteTest -->
+        <test-method signature="PatchTest()[pri:0, instance:test.PutPatchDeleteExamples@c8c12ac]" started-at="2025-01-13T15:58:44 IST" name="PatchTest" finished-at="2025-01-13T15:58:44 IST" duration-ms="403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PatchTest -->
+        <test-method signature="PutTest()[pri:0, instance:test.PutPatchDeleteExamples@c8c12ac]" started-at="2025-01-13T15:58:44 IST" name="PutTest" finished-at="2025-01-13T15:58:45 IST" duration-ms="342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PutTest -->
+      </class> <!-- test.PutPatchDeleteExamples -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
