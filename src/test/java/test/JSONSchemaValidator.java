@@ -9,6 +9,10 @@ public class JSONSchemaValidator {
 
 	@Test
 	public void getTest() {
+		
+		//https://www.youtube.com/watch?v=rkGI32WXmPQ&list=PLhW3qG5bs-L8xPrBwDv66cTMlFNeUPdJx&index=10
+		// use this video for JSON schema validation
+		
 		baseURI = "https://reqres.in/api";
 
 		given().get("/users?page=2").then()
