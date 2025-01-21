@@ -9,6 +9,10 @@ import io.restassured.http.ContentType;
 public class PutPatchDeleteExamples {
 	@Test
 	public void PutTest() {
+		
+		//https://www.youtube.com/watch?v=QDp7EQga3ME&list=PLhW3qG5bs-L8xPrBwDv66cTMlFNeUPdJx&index=7
+		//01:48
+		
 		JSONObject request = new JSONObject();
 
 		request.put("name", "Deepak");
