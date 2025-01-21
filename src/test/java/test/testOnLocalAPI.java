@@ -12,6 +12,13 @@ import static io.restassured.http.ContentType.*;
 
 public class testOnLocalAPI {
 
+	// https://www.youtube.com/watch?v=V7sLq7u28BA&list=PLhW3qG5bs-L8xPrBwDv66cTMlFNeUPdJx&index=8
+	// 01:35 - install json-server
+	
+	
+	//https://www.youtube.com/watch?v=C8AiM5Y1YVw&list=PLhW3qG5bs-L8xPrBwDv66cTMlFNeUPdJx&index=9
+	// get post put patch delete 
+	
 	@Test
 	public void get() {
 
@@ -48,7 +55,7 @@ public class testOnLocalAPI {
 		baseURI = "http://localhost:3000";
 
 		// Correct the URL to /users/2 (without query parameters)
-		given().contentType(ContentType.JSON).accept(ContentType.JSON).body(request.toString()).when().put("/users/8469") 
+		given().contentType(ContentType.JSON).accept(ContentType.JSON).body(request.toString()).when().put("/users/1130") 
 		.then().statusCode(200); // Expecting status 200 (OK) after successful update
 	}
 
@@ -62,7 +69,7 @@ public class testOnLocalAPI {
 		baseURI = "http://localhost:3000";
 
 		given().contentType(ContentType.JSON).accept(ContentType.JSON).body(request.toString()).when()
-				.patch("/users/7b67").then().statusCode(200);
+				.patch("/users/1130").then().statusCode(200);
 
 	}	
 
@@ -71,6 +78,6 @@ public class testOnLocalAPI {
 
 		baseURI = "http://localhost:3000";
 
-		when().delete("/users/d4fd").then().statusCode(200);
+		when().delete("/users/1130").then().statusCode(200);
 	}
 }
