@@ -14,7 +14,7 @@ Pre Requisites
 ## JSON-Server Installation
 >#### Pre Requisite -  ***node.js***
 
-Refer (this video)[PutPatchDeleteExamples] for json-server installation and creat local API
+Refer (this video)[https://www.youtube.com/watch?v=V7sLq7u28BA&list=PLhW3qG5bs-L8xPrBwDv66cTMlFNeUPdJx&index=8] for json-server installation and creat local API
 Create file ___`"db.json"`___ at any place, i have created it at `C:\Users\deepak.jagtap>`
 
 Paste below data into  ___`"db.json"`___
