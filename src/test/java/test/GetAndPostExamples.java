@@ -20,8 +20,13 @@ public class GetAndPostExamples {
 				.body("data.first_name", hasItems("George", "Rachel", "Byron")).log().all();
 	}
 
+	
 	@Test
 	public void PostTest() {
+		
+		// Refer below video link for this test (PostTest) explanation
+		// https://www.youtube.com/watch?v=EvG8r7AhanI&list=PLhW3qG5bs-L8xPrBwDv66cTMlFNeUPdJx&index=6
+		// 09:00
 		JSONObject request = new JSONObject();
 
 		request.put("name", "Deepak");
