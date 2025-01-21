@@ -1,14 +1,17 @@
 package test;
 
+//import static io.restassured.RestAssured.*;
+// We can use above, instead of below 3
+import static io.restassured.RestAssured.baseURI;
+import static io.restassured.RestAssured.get;
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
+
+
 import org.testng.Assert;
-
-
 import org.testng.annotations.Test;
 
-import static io.restassured.RestAssured.*;
 import io.restassured.response.Response;
-import static io.restassured.matcher.RestAssuredMatchers.*;
-import static org.hamcrest.Matchers.*;
 
 public class testExamples {
 	@Test
@@ -16,6 +19,7 @@ public class testExamples {
 
 		// Refer below video link for this test (testOne) explanation
 		// https://www.youtube.com/watch?v=vgMyJhrMV0o&list=PLhW3qG5bs-L8xPrBwDv66cTMlFNeUPdJx
+		// From 03:55
 		
 		Response response = get("https://reqres.in/api/users?page=2");
 
@@ -33,12 +37,16 @@ public class testExamples {
 	@Test
 	public void testTwo() {
 		
+		// Refer below video link for this test (testTwo) explanation
+		// https://www.youtube.com/watch?v=iXQimBnjgfc&list=PLhW3qG5bs-L8xPrBwDv66cTMlFNeUPdJx&index=5
+		// 02:20
+		
 		baseURI = "https://reqres.in/api";
 		given().
 		get("/users?page=2").
 		then().
 		statusCode(200).
-		body("data[1].id", equalTo(8)).
+		body("data[2].first_name", equalTo("Tobias")).
 		log().all();
 		
 	}
