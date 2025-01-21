@@ -14,6 +14,9 @@ public class testExamples {
 	@Test
 	public void testOne() {
 
+		// Refer below video link for this test (testOne) explanation
+		// https://www.youtube.com/watch?v=vgMyJhrMV0o&list=PLhW3qG5bs-L8xPrBwDv66cTMlFNeUPdJx
+		
 		Response response = get("https://reqres.in/api/users?page=2");
 
 		System.out.println("getStatusCode :" + response.getStatusCode());
