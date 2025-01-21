@@ -1,6 +1,7 @@
 package test;
 
 import static io.restassured.RestAssured.baseURI;
+
 import static io.restassured.RestAssured.given;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
@@ -16,7 +17,7 @@ public class testOnLocalAPI {
 
 		baseURI = "http://localhost:3000/";
 
-		given().get("/posts").then().statusCode(200).log().all();
+		given().get("/users").then().statusCode(200).log().all();
 
 	}
 
@@ -47,7 +48,7 @@ public class testOnLocalAPI {
 		baseURI = "http://localhost:3000";
 
 		// Correct the URL to /users/2 (without query parameters)
-		given().contentType(ContentType.JSON).accept(ContentType.JSON).body(request.toString()).when().put("/users/573a") 
+		given().contentType(ContentType.JSON).accept(ContentType.JSON).body(request.toString()).when().put("/users/8469") 
 		.then().statusCode(200); // Expecting status 200 (OK) after successful update
 	}
 
@@ -61,7 +62,7 @@ public class testOnLocalAPI {
 		baseURI = "http://localhost:3000";
 
 		given().contentType(ContentType.JSON).accept(ContentType.JSON).body(request.toString()).when()
-				.patch("/users/573a").then().statusCode(200);
+				.patch("/users/7b67").then().statusCode(200);
 
 	}	
 
@@ -70,6 +71,6 @@ public class testOnLocalAPI {
 
 		baseURI = "http://localhost:3000";
 
-		when().delete("/users/573a").then().statusCode(200);
+		when().delete("/users/d4fd").then().statusCode(200);
 	}
 }
