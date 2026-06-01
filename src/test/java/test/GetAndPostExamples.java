@@ -34,14 +34,20 @@ public class GetAndPostExamples {
 		// 09:00
 		JSONObject request = new JSONObject();
 
-		request.put("name", "Deepak");
-		request.put("job", "QA");
+		request.put("firstname", "Sahil");
+		request.put("lastname", "N");
+		request.put("location", "Pune");
 
-		baseURI = "https://reqres.in/api";
+		baseURI = "http://localhost:3000";
 
-		given().
-		header("Content-Type","application/json").
-		contentType(ContentType.JSON).accept(ContentType.JSON).
-		body(request.toJSONString()).when().post("/users").then().statusCode(201).log().all();
+		        given().
+		        header("Content-Type","application/json").
+		        contentType(ContentType.JSON).
+                accept(ContentType.JSON).
+		        body(request.toJSONString()).
+                when().
+                post("/users").then().
+                statusCode(201).
+                log().all();
 	}
 }
