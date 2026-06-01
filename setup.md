@@ -49,6 +49,26 @@ Paste below data into  ___`"db.json"`___
       "name": "QA",
       "id": "2"
     }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Laptop",
+      "price": 1200,
+      "category": "Electronics"
+    },
+    {
+      "id": "2",
+      "name": "Mouse",
+      "price": 25,
+      "category": "Accessories"
+    },
+    {
+      "id": "3",
+      "name": "Keyboard",
+      "price": 75,
+      "category": "Accessories"
+    }
   ]
 }
 ```
