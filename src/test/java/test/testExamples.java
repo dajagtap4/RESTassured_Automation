@@ -21,7 +21,7 @@ public class testExamples {
 		// https://www.youtube.com/watch?v=vgMyJhrMV0o&list=PLhW3qG5bs-L8xPrBwDv66cTMlFNeUPdJx
 		// From 03:55
 		
-		Response response = get("https://reqres.in/api/users?page=2");
+		Response response = get("http://localhost:3000/users");
 
 		System.out.println("getStatusCode :" + response.getStatusCode());
 		System.out.println("getTime :" + response.getTime());
@@ -41,12 +41,12 @@ public class testExamples {
 		// https://www.youtube.com/watch?v=iXQimBnjgfc&list=PLhW3qG5bs-L8xPrBwDv66cTMlFNeUPdJx&index=5
 		// 02:20
 		
-		baseURI = "https://reqres.in/api";
+		baseURI = "http://localhost:3000";
 		given().
-		get("/users?page=2").
+		get("/users").
 		then().
 		statusCode(200).
-		body("data[2].first_name", equalTo("Tobias")).
+		body("[2].firstname", equalTo("akshay")).
 		log().all();
 		
 	}
