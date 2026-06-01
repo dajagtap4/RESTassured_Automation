@@ -34,18 +34,22 @@ public class PutPatchDeleteExamples {
 	}
 	
 	@Test
-	public void PatchTest() {
 		JSONObject request = new JSONObject();
 
-		request.put("name", "Deepak");
-		request.put("job", "QA");
+        request.put("location", "Mumbai");
 
-		baseURI = "https://reqres.in";
+        baseURI = "http://localhost:3000";
 
-		given().
-		header("Content-Type","application/json").
-		contentType(ContentType.JSON).accept(ContentType.JSON).
-		body(request.toJSONString()).when().put("/api/users/2").then().statusCode(200).log().all();
+        given().
+                header("Content-Type","application/json").
+                contentType(ContentType.JSON).
+                accept(ContentType.JSON).
+                body(request.toJSONString()).
+                when().
+                patch("/users/ESFKhKCg9hs").
+                then().
+                statusCode(200).
+                log().all();
 	}
 	
 	@Test
