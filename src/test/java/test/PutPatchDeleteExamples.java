@@ -43,9 +43,9 @@ public class PutPatchDeleteExamples {
 	
 	@Test
 	public void DeleteTest() {
-		
-		baseURI = "https://reqres.in";
 
-		when().delete("/api/users/2").then().statusCode(204).log().all();
+        baseURI = "http://localhost:3000";
+
+		when().delete("/users/8aSR0DMAJoc").then().statusCode(200).log().all();
 	}
 }
