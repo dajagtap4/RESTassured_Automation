@@ -14,10 +14,15 @@ public class GetAndPostExamples {
 
 	@Test
 	public void GetTest() {
-		baseURI = "https://reqres.in/api";
+        baseURI = "http://localhost:3000";
 
-		given().get("/users?page=2").then().statusCode(200).body("data[4].first_name", equalTo("George"))
-				.body("data.first_name", hasItems("George", "Rachel", "Byron")).log().all();
+		given().
+                get("/users").
+                then().
+                statusCode(200).
+                body("[1].firstname", equalTo("johny")).
+                body("firstname", hasItems("anmol", "johny", "akshay")).
+                log().all();
 	}
 
 	
