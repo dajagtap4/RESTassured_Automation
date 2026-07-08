@@ -21,7 +21,7 @@ public class testExamples {
 		// https://www.youtube.com/watch?v=vgMyJhrMV0o&list=PLhW3qG5bs-L8xPrBwDv66cTMlFNeUPdJx
 		// From 03:55
 		
-		Response response = get("http://localhost:3000/users");
+		Response response = get("http://localhost:3000/employees");
 
 		System.out.println("getStatusCode :" + response.getStatusCode());
 		System.out.println("getTime :" + response.getTime());
